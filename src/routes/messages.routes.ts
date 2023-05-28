@@ -15,12 +15,10 @@ messagesRoutes.post(
   createMessageController
 );
 
-messagesRoutes.get("", listAllMessagesController);
-
-// usersRoutes.get(
-//   "/profile",
-//   validityCheckOfUserByTokenMiddlewares,
-//   profileController
-// );
+messagesRoutes.get(
+  "",
+  validityCheckOfUserByTokenMiddlewares,
+  listAllMessagesController
+);
 
 export default messagesRoutes;
