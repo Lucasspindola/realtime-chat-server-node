@@ -4,6 +4,8 @@ import http from "http";
 import { Server as SocketIOServer } from "socket.io";
 
 const PORT = 3001;
+const cors = require("cors");
+app.use(cors());
 
 (async () => {
   await AppDataSource.initialize().catch((err) => {
@@ -11,7 +13,11 @@ const PORT = 3001;
   });
 
   const server = http.createServer(app);
-  const io = new SocketIOServer(server);
+  const io = new SocketIOServer(server, {
+    cors: {
+      origin: "*",
+    },
+  });
 
   io.on("connection", (socket) => {
     console.log("Connected User id:", socket.id);
@@ -33,7 +39,7 @@ const PORT = 3001;
       });
     });
   });
-
+  app.use(cors());
   server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
