@@ -6,8 +6,7 @@ https://github.com/Lucasspindola/realtime-chat-client-react
 
 link vercel:
 
-https://realtime-chat-client-react-9g3zotvxp-lucasspindola.vercel.app/login
-
+https://realtime-chat-client-react.vercel.app/login
 documentation:
 
 https://documentation-api-chat-node-ts.vercel.app/
