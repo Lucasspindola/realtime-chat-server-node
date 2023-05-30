@@ -1,12 +1,16 @@
 # realtime chat server
 
-front
+link repositorio front:
 
-link repositorio front;
 https://github.com/Lucasspindola/realtime-chat-client-react
 
-link vercel-(necessario o back estar rodando):
-https://realtime-chat-client-react.vercel.app/login
+link vercel:
+
+https://realtime-chat-client-react-9g3zotvxp-lucasspindola.vercel.app/login
+
+documentation:
+
+https://documentation-api-chat-node-ts.vercel.app/
 
 ## Tabela de Conteúdos
 
